@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  font-family: Impact, sans-serif;
+  color: #6495ed;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+p {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-family: Impact, sans-serif;
+}
+ul {
+  text-align: center;
+}
+li {
+  text-align: center;
+  font-size: smaller;
+  display: inline-table;
+}
+small {
+  text-align: center;
+  font-size: smaller;
+}
+.space {
+  padding-bottom: 30px;
+}
+.space-b {
+  padding-bottom: 150px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  padding-top: 20px;
+}
+
+.button3 {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

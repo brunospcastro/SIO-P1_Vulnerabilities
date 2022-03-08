@@ -1,0 +1,5 @@
+Passwords of 3 dummy users for use in a development setting only.
+
+admin: Admin1.
+George: Tsunami123
+David : Golias7.

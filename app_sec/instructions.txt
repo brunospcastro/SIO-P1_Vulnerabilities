@@ -1,0 +1,19 @@
+1.Install mysql-server and mysql-client (if you already did it for the secure version you can skip this step)
+2.run node app_sec/createDB.js
+3.run node app_sec/insertDB.js
+4.Run: sudo mysql -pyour_new_password (if you already did it for the secure version you can skip this two steps)
+		-this password is defined on .env file in case of the secure app or in index.js in case of vulnerable
+5.Run this two queries:
+		-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_new_password;
+		-flush privileges;
+6.there should be a .env page on /app_sec/.
+(usually this file would never go to the repository but for simplicity when grading we decided to not add it to .gitignore )
+
+7. finally run node index.js on the root dir of the app_sec.
+
+8.In your browser access localhost:<port that is defined on .env>/
+                or ships as 5000 by default
+
+troubleshooting:
+you might need to run : npm i jade@^1.11.0 
+
